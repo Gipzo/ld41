@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Character
+  - CharacterProjectiles
+  - Enemy
+  - EnemyOutOfBounds
+  - Bounds
+  - ProjectileShell
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3560509871
+    locked: 0
+  - name: Grid
+    uniqueID: 4139502291
+    locked: 0
+  - name: Enemies
+    uniqueID: 2765899833
+    locked: 0
+  - name: Character
+    uniqueID: 292203583
+    locked: 0
+  - name: Effects
+    uniqueID: 201012925
+    locked: 0
+  - name: UI
+    uniqueID: 199266367
+    locked: 0
