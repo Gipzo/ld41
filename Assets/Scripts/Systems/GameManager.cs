@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public InputField NickInput;
     public Text MessageText;
     public GameObject ScoreText;
+    public GameObject HighscoreSender;
+    public GameObject HighscoreSent;
     public float MessageDelay = 2.3f;
     public PalleteSwap Pallete;
 
@@ -121,6 +123,11 @@ public class GameManager : MonoBehaviour
 
     public void SendScores()
     {
+        if (NickInput.text == "")
+            return;
+            
+        HighscoreSender.SetActive(false);
+        HighscoreSent.SetActive(true);
         Highscores.Instance.SendScore(NickInput.text, Player.Score);
     }
 
@@ -146,6 +153,9 @@ public class GameManager : MonoBehaviour
             ShowMessage("YOU WON!\n\nYOUR SCORE: " + Player.Score.ToString(), false);
         }
         DestroyEnemies();
+
+        HighscoreSender.SetActive(true);
+        HighscoreSent.SetActive(false);
         EndMenu.SetActive(true);
 
     }
