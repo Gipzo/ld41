@@ -257,7 +257,7 @@ public class GridChecker : MonoBehaviour
                     if (enemy.AllowedToMatch)
                     {
                         var c = Colors[enemy.MatchType];
-                        color = new Color(c.r, 0.3f * c.r, c.b, 1f);
+                        color = new Color(c.r, 0.3f * c.r, 0.3f * c.r, 1f);
                     }
 
                     _cells[index].color = color;
